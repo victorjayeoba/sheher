@@ -1,0 +1,15 @@
+{
+  "build": {
+    "command": "npm run build",
+    "output": "out"
+  },
+  "deploy": {
+    "static": true,
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+} 
